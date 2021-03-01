@@ -34,3 +34,60 @@ ${enter}`;
 const gameOver5 = `You looked at the trap and the light BLINDED YOU! ${gameOver}`;
 const win = `The ghost trap sucked Slimer in and closed. CONGRATULATIONS! YOU CAUGHT SLIMER!!!`;
 
+// Alerts the user to start the game
+alert(start);
+
+// Work thru the game
+// prompt(q1);
+
+// Capture user responses by setting variable (let)
+// Sets the value of userInput to the number the user enters - alert shows on screen what th user inputs
+let userInput = prompt(q1);
+alert(userInput);
+
+// One conditional statement with MANY conditional statements
+
+// Checks type strick equals(===) string value
+// if ("1"= == 1) {
+//     alert("User entered 1");
+// }
+
+
+// alert("User entered 1");
+// Checks value not type - string value
+let userInput = prompt(q1);
+
+
+// 1st Conditional Statement
+if (userInput == 1) {
+    userInput = prompt(q2);
+
+    // 2nd Conditional Statement
+    if (userInput == 1) {
+        userInput = prompt (q3);
+
+        // 3rd  Conditional Statement
+        if (userInput == 2) {
+            userInput = prompt(q4);
+
+            //  4th Conditional Statement
+            if(userInput == 1) {
+                userInput = prompt(q5);
+
+                // 5th Conditional Statement
+                if (userInput -- 2) {
+                    alert(win);
+                }
+            } else {
+                alert(gameOver4);
+                alert(gameOver4);
+            }
+        } else {
+            alert(gameOver3);
+        }
+    }
+} else {
+    alert(gameOver1);
+}
+
+
